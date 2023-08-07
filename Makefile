@@ -15,3 +15,7 @@ run:
 
 freeze:
 	source .venv/bin/activate; python -m pip freeze > requirements.txt	
+
+test:
+	source .venv/bin/activate; python -m unittest tests.test_todo
+
