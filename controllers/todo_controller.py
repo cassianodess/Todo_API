@@ -36,7 +36,7 @@ def create():
         title = request.json["title"]
 
         if not title:
-            raise Exception("title must be empty")
+            raise Exception("title must be not empty")
 
         todo = create_todo(title).to_dict()
 
